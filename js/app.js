@@ -114,8 +114,13 @@ app.controller("Pagina1Controller", ["$scope", function($scope) {
                 "ruta" : "reporte2"}]
               } ] ;
 
-
-          }]);
+      $scope.importData = function () {
+             alasql('SELECT CEDULA, NOMBRE from xlsx("../data/lotetalleres.xlsx",{headers:true, range:"A1:U278"})',
+              [],function(data){
+                console.log(data);
+                  });
+                };
+                }]);
 
 
  /*
