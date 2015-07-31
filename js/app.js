@@ -115,9 +115,9 @@ app.controller("Pagina1Controller", ["$scope", function($scope) {
               } ] ;
 
       $scope.importData = function () {
-             alasql('SELECT CEDULA, NOMBRE from xlsx("../data/lotetalleres.xlsx",{headers:true, range:"A1:U278"})',
+             alasql('SELECT NACIONALIDAD, CEDULA, NOMBRE, DIRECCION, TFIJO1, EMAIL1, CIUDAD from xlsx("../data/lotetalleres.xlsx",{headers:true, range:"A1:U278"}) where CIUDAD ="VALENCIA"',
               [],function(data){
-                console.log(data);
+              $scope.datos = data;
                   });
                 };
                 }]);

@@ -1,19 +1,43 @@
 <h1>Soy la pagina 1</h1>
 
  <div ng-controller="Pagina1Controller" class ="menus">
-<table>
+<table class="table table-striped table-hover">
   <th>
-    <h1>Cedula</h1>
+     Cedula
     </th>
   <th>
-    <h1>Nombre</h1>
+     Nombre
   </th>
   <th>
-    <h1>Direccion</h1>
+     Direccion
   </th>
-  <tr>
+  <th>
+     Telefono fijo
+  </th>
+  <th>
+     Correo
+  </th>
+  <th>
+     Ciudad
+  </th>
+  <tr ng-repeat="dato in datos">
     <td>
-
+      {{dato.NACIONALIDAD +"-"+ dato.CEDULA}}
+    </td>
+    <td>
+      {{dato.NOMBRE}}
+    </td>
+    <td>
+      {{dato.DIRECCION}}
+    </td>
+    <td>
+      {{dato.TFIJO1}}
+    </td>
+    <td>
+      {{dato.EMAIL1}}
+    </td>
+    <td>
+      {{dato.CIUDAD}}
     </td>
   </tr>
 </table>
@@ -21,7 +45,7 @@
          </li>
      </ul>
       <div class="debug">
-      <pre ng-bind="menus | json">
+      <pre ng-bind="datos | json">
       </pre>
     </div>
 
