@@ -1,0 +1,29 @@
+<h1>Soy la pagina 1</h1>
+ 
+ <div ng-controller="Pagina1Controller" class ="menus">
+    <ul>
+        <li ng-repeat="menu in menus">
+            <a href="#" id="menus-t">{{menu.name}}</a>
+        <ul data-ng-show="menu.submenu">
+         <li ng-repeat="submenu in menu.submenu">
+             <a href="#" id="menus-t">{{submenu.name}}</a>
+         </li>
+        
+    </ul>
+        </li>
+   
+             
+                 
+         </li>
+     </ul>
+      <div class="debug">
+      <pre ng-bind="menus | json">
+      </pre>
+    </div>
+     
+     
+ </div>
+
+ 
+   
+<p class ="mensaje">{{mensaje}}</p>

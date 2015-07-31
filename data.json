@@ -1,0 +1,49 @@
+[{
+                    id : 001 , name : "Automovil" , iconf : "fa fa-car", categoria : "M",
+                    ruta : " ", 
+                    submenu : [{
+                        id : 002, name : "Pre-listado Ind" , categoria : "L",
+                        ruta : "reporte1"} ,{
+                        id : 003, name : "Pre-listado flota" , categoria : "L",
+                        ruta : "reporte2"} , {
+                        id : 004, name : "Tarifas" , categoria : "L",
+                        ruta : "reporte3"} , {   
+                        id : 005, name : "Tarifas" , categoria : "L",
+                        ruta : "reporte3"         
+                                }]
+                   },
+                   {
+                   id : 006 , name : "Siniestros" , iconf : "fa fa-plus-square", categoria : "M",
+                    ruta : " ", 
+                    submenu : [{
+                        id : 002, name : "Ordenes de Pago" , categoria : "L",
+                        ruta : "reporte1"} ,{
+                        id : 003, name : "Ordenes de Compra" , categoria : "L",
+                        ruta : "reporte2"} , {
+                        id : 004, name : "Declaracion de Siniestros" , categoria : "L",
+                        ruta : "reporte3"}],
+                   },
+                    {
+                    id : 010 , name : "Personas" ,  iconf : "fa fa-male", categoria : "M",
+                    ruta : " ", 
+                    submenu : [{
+                        id : 002, name : "HCM individual" , categoria : "L",
+                        ruta : "reporte1"} ,{
+                        id : 003, name : "Solidarios" , categoria : "L",
+                        ruta : "reporte2"} , {
+                        id : 004, name : "GEH" , categoria : "L",
+                        ruta : "reporte3"} , {   
+                        id : 005, name : "Declaracion" , categoria : "L",
+                        ruta : "reporte3"         
+                                }],
+                    
+                    },
+                    {
+                   id : 006 , name : "Intranet" , iconf: "fa fa-globe", categoria : "M",
+                    ruta : " ", 
+                    submenu : [{
+                        id : 002, name : "Reporte 1" , categoria : "L",
+                        ruta : "reporte1"} ,{
+                        id : 003, name : "Reporte 2" , categoria : "L",
+                        ruta : "reporte2"}]
+                    }]

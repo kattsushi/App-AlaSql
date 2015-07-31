@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>app- menu</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Fuentes de Google -->
+	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Iconos -->
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fontastic.s3.amazonaws.com/VvL4xpZhcZz3YwDRATouEM/icons.css" rel="stylesheet">
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body class="desarrollo">
+	<!-- hhedear -->
+	<div class="grupo">
+		<div class="caja movil total"></div>
+	</div>
+	<!-- Contenedor -->
+	<div class="grupo">
+		<div class="caja movil-30" ng-controller="Pagina1Controller">
+			<ul id="accordion" class="accordion">
+				<li ng-repeat="menu in menus">
+					<div class="link"><i class="{{ menu.iconf | lowercase}}"></i>{{menu.name | uppercase }}<i class="fa fa-chevron-down"></i></div>
+					<ul class="submenu" data-ng-show="menu.submenu">
+						<li ng-repeat="submenu in menu.submenu"><a href="#/{{submenu.ruta}}">{{submenu.name}}</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="caja movil-70">
+			<div ng-view></div>
+		</div>
+	</div>
+	<!-- Scripts -->
+	
+	<script src="js/angular.js"></script>
+  <script src='js/angular-route.js'></script>
+  <script src="js/angular-resource.js"></script>
+  <script src="//code.angularjs.org/1.2.19/i18n/angular-locale_es-es.js"></script>
+  <script src="js/app.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
