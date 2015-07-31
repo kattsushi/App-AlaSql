@@ -118,13 +118,13 @@ app.controller("Pagina1Controller", ["$scope", function($scope) {
           }]);
 
 
-
+ /*
 app.controller("Pagina3Controller", ["$scope", function($scope) {
    $scope.mensaje="Texto cargado desde el controlador Pagina3Controller";
     post = $resource('http://jsonplaceholder.typicode.com/posts'), {});
     $scope.menu= Post.query();
 
- /*
+
     $scope.menu = [];
      var OtroMenu = [
          {
@@ -165,8 +165,8 @@ app.controller("Pagina3Controller", ["$scope", function($scope) {
                  alert(err);
             });
         }
-        */
-}]);
+
+}]);  */
 
 app.controller("Pagina4Controller", ["$scope",function($scope) {
    $scope.mensaje="Texto cargado desde el controlador Pagina3Controller";
